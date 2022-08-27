@@ -1,5 +1,5 @@
 {
-  "name": "discord-blackjack",
+  "name": "custom-bj",
   "version": "4.0.0",
   "description": "A blackjack game for Discord",
   "main": "index.js",
