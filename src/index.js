@@ -37,7 +37,7 @@ module.exports = async (message, options) => {
   if (!message) throw new Error('[MISSING_PARAMETER] The message or interaction parameter was not provided, was null or undefined.');
 
   // check if message and commandInteraction aren't something made up
-  if (!(message instanceof Discord.Message) && !(message instanceof Discord.CommandInteraction))
+  if (!message.isChatInputCommand() && !message instanceof Discord.Message)
     throw new Error('[INVALID_PARAMATER] The message or interaction parameter provided is not valid.');
 
   // set all the options
@@ -63,7 +63,7 @@ module.exports = async (message, options) => {
   let commandType;
   if (message instanceof Discord.Message) {
     commandType = 'message';
-  } else if (message instanceof Discord.CommandInteraction) {
+  } else if (message.isChatInputCommand()) {
     commandType = 'interaction';
   }
 
