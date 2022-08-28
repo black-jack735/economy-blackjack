@@ -1,6 +1,6 @@
 {
   "name": "custom-bj",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "A blackjack game for Discord",
   "main": "index.js",
   "typings": "types/index.d.ts",

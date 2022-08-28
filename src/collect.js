@@ -1632,7 +1632,7 @@ class Collect {
           } else if (dealervalue === yourvalue) {
             finalResult = {
               result: 'TIE',
-              method: `You tied. <:coin:706659001164628008> \`${Number(options.betAmt).toLocaleString('en')}\``,
+              method: `You tied.`,
               ycard: yourcard,
               dcard: dealercard
             };
