@@ -1549,7 +1549,7 @@ class Collect {
       }
       finalResult = {
         result: 'LOSE',
-        method: `You lost <:coin:706659001164628008> \`${Number(options.betAmt).toLocaleString('en')}\` (dealer had blackjack).`,
+        method: `You lost \`${Number(options.betAmt).toLocaleString('en')}\` (dealer had blackjack).`,
         ycard: yourcard,
         dcard: dealercard
       };
@@ -1604,28 +1604,28 @@ class Collect {
           if (yourvalue > 21) {
             finalResult = {
               result: 'LOSE',
-              method: `You lost <:coin:706659001164628008> \`${Number(options.betAmt).toLocaleString('en')}\` (busted).`,
+              method: `You lost \`${Number(options.betAmt).toLocaleString('en')}\` (busted).`,
               ycard: yourcard,
               dcard: dealercard
             };
           } else if (yourvalue <= 21 && dealervalue < yourvalue) {
             finalResult = {
               result: 'WIN',
-              method: `You won with more points. <:coin:706659001164628008> \`${Number(options.betAmt).toLocaleString('en')}\``,
+              method: `You won with more points. \`${Number(options.betAmt).toLocaleString('en')}\``,
               ycard: yourcard,
               dcard: dealercard
             };
           } else if (dealervalue > yourvalue && dealervalue > 21 && yourvalue <= 21) {
             finalResult = {
               result: 'WIN',
-              method: `You won <:coin:706659001164628008> \`${Number(options.betAmt).toLocaleString('en')}\` (dealer busted).`,
+              method: `You won \`${Number(options.betAmt).toLocaleString('en')}\` (dealer busted).`,
               ycard: yourcard,
               dcard: dealercard
             };
           } else if (dealervalue > yourvalue && dealervalue <= 21) {
             finalResult = {
               result: 'LOSE',
-              method: `You lost <:coin:706659001164628008> \`${Number(options.betAmt).toLocaleString('en')}\` (dealer had more points).`,
+              method: `You lost \`${Number(options.betAmt).toLocaleString('en')}\` (dealer had more points).`,
               ycard: yourcard,
               dcard: dealercard
             };
