@@ -1,6 +1,6 @@
 {
-  "name": "custom-bj",
-  "version": "4.0.3",
+  "name": "discord-bj14",
+  "version": "4.0.5",
   "description": "A blackjack game for Discord",
   "main": "index.js",
   "typings": "types/index.d.ts",
@@ -31,3 +31,4 @@
     "shuffle-array": "^1.0.1"
   }
 }
+
